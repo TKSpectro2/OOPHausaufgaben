@@ -19,6 +19,8 @@ public:
 	void moveBy(double deltaX, double deltaY);
 	void moveTo(double newX, double newY);
 	BoundingBox2D getBounds() const;
-
+private:
+	double x;
+	double y;
 };
 

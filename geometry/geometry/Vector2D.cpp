@@ -1,4 +1,5 @@
 #include "Vector2D.h"
+#include<math.h>
 
 
 
@@ -42,12 +43,13 @@ Vector2D Vector2D::subtract(const Vector2D &other) const
 
 double Vector2D::getLength() const
 {
-	return /*sqrt(this.x² + this.y²)*/;
+	
+	return sqrt((this->x * this->x) + (this->y * this->y));
 }
 
 double Vector2D::getOrientation() const
 {
-	return 0.0;
+	//TODO
 }
 
 double Vector2D::multiply(const Vector2D &other) const
