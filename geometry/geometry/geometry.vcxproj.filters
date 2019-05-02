@@ -14,4 +14,29 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Point2D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox2D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Point2D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox2D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
