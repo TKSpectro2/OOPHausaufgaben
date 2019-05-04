@@ -36,6 +36,18 @@ double Point2D::getDistance() const
 	return result;
 }
 
+void Point2D::moveBy(const Vector2D &delta)
+{
+	this->x += delta.getX;
+	this->y += delta.getY;
+}
+
+void Point2D::moveBy(double deltaX, double deltaY)
+{
+	this->x += deltaX;
+	this->y += deltaY;
+}
+
 void Point2D::moveTo(double newX, double newY)
 {
 	this->x = newX;

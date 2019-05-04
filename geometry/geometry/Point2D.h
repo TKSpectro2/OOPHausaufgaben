@@ -18,7 +18,7 @@ public:
 	void moveBy(const Vector2D &delta);
 	void moveBy(double deltaX, double deltaY);
 	void moveTo(double newX, double newY);
-	BoundingBox2D getBounds() const;
+	BoundingBox2D getBouSnds() const;
 private:
 	double x;
 	double y;
