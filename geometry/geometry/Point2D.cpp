@@ -7,6 +7,10 @@ Point2D::Point2D()
 {
 }
 
+Point2D::Point2D(double x, double y)
+{
+
+}
 
 Point2D::~Point2D()
 {
@@ -27,15 +31,14 @@ Point2D Point2D::add(const Vector2D &vect) const
 	Point2D resultPoint;
 	resultPoint.x = this->x + vect.getX();
 	resultPoint.y = this->y + vect.getY();
-	return ;
+	return resultPoint;
 }
 
 Vector2D Point2D::getDifference(const Point2D &other) const
 {
 	//Set funktionen werden eigentlich gebraucht
 	Vector2D resultVector;
-
-	resultVector.x = this->x - other.x;
+	resultVector.getX = this->x - other.x;
 	resultVector.y = this->y - other.y;
 
 	return resultVector;
