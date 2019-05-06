@@ -124,13 +124,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BoundingBox2D.cpp" />
+    <ClCompile Include="Line2D.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point2D.cpp" />
+    <ClCompile Include="Polyline2D.cpp" />
     <ClCompile Include="Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoundingBox2D.h" />
+    <ClInclude Include="Line2D.h" />
     <ClInclude Include="Point2D.h" />
+    <ClInclude Include="Polyline2D.h" />
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

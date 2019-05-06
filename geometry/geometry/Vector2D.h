@@ -2,7 +2,7 @@
 class Vector2D
 {
 public:
-	Vector2D();
+	Vector2D(double deltax=0.0, double deltay=0.0);
 	~Vector2D();
 	double getX() const;
 	double getY() const;
@@ -12,7 +12,7 @@ public:
 	double getOrientation() const;
 	double multiply(const Vector2D &other) const;
 private:
-	double x;
-	double y;
+	double deltaX;
+	double deltaY;
 };
 

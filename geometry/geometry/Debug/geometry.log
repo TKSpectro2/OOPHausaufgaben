@@ -1,0 +1,21 @@
+﻿  BoundingBox2D.cpp
+  Line2D.cpp
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Line2D.cpp(6): error C2511: "Line2D::Line2D(const Point2D &,const Point2D &)": Überladene Memberfunktion nicht in "Line2D" gefunden
+  C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Line2D.h(4): note: Siehe Deklaration von "Line2D"
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Line2D.cpp(7): error C2550: "Line2D::{ctor}": Initialisierungslisten für Konstruktoren dürfen nur in Konstruktordefinition stehen
+  main.cpp
+  Point2D.cpp
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(28): error C3867: "Vector2D::getX": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(28): error C2297: "+": Ungültig, da der rechte Operand vom Typ "double (__thiscall Vector2D::* )(void) const" ist
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(29): error C3867: "Vector2D::getY": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(29): error C2297: "+": Ungültig, da der rechte Operand vom Typ "double (__thiscall Vector2D::* )(void) const" ist
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(30): error C2561: "Point2D::add": Funktion muss einen Wert zurückgeben
+  C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(25): note: Siehe Deklaration von "Point2D::add"
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(42): error C3867: "Vector2D::getX": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(42): error C2297: "+=": Ungültig, da der rechte Operand vom Typ "double (__thiscall Vector2D::* )(void) const" ist
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(43): error C3867: "Vector2D::getY": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Point2D.cpp(43): error C2297: "+=": Ungültig, da der rechte Operand vom Typ "double (__thiscall Vector2D::* )(void) const" ist
+  Polyline2D.cpp
+  Vector2D.cpp
+  Code wird generiert...
+C:\Users\adoon\Documents\GitHub\OOPHausaufgaben\geometry\geometry\Vector2D.cpp(54): error C4716: "Vector2D::getOrientation": Muss einen Wert zurückgeben

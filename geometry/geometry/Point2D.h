@@ -5,7 +5,7 @@
 class Point2D
 {
 public:
-	Point2D();
+	Point2D(double x=0.0, double Y=0.0);
 	~Point2D();
 	double getX() const;
 	double getY() const;

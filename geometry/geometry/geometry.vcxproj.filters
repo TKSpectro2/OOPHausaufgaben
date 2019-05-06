@@ -27,6 +27,12 @@
     <ClCompile Include="BoundingBox2D.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Line2D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Polyline2D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2D.h">
@@ -36,6 +42,12 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="BoundingBox2D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Line2D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Polyline2D.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

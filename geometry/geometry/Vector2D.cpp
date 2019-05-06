@@ -3,7 +3,8 @@
 
 
 
-Vector2D::Vector2D()
+Vector2D::Vector2D(double deltax, double deltay)
+	:deltaX(deltax),deltaY(deltay)
 {
 }
 
@@ -14,19 +15,19 @@ Vector2D::~Vector2D()
 
 double Vector2D::getX() const
 {
-	return this->x;
+	return this->deltaX;
 }
 
 double Vector2D::getY() const
 {
-	return this->y;
+	return this->deltaY;
 }
 
 Vector2D Vector2D::add(const Vector2D &other) const
 {
 	Vector2D resultVector;
-	resultVector.x = this->x + other.x;
-	resultVector.y = this->y + other.y;
+	resultVector.deltaX = this->deltaX + other.deltaX;
+	resultVector.deltaY = this->deltaY + other.deltaY;
 
 	return resultVector;
 }
@@ -35,8 +36,8 @@ Vector2D Vector2D::add(const Vector2D &other) const
 Vector2D Vector2D::subtract(const Vector2D &other) const
 {
 	Vector2D resultVector;
-	resultVector.x = this->x - other.x;
-	resultVector.y = this->y - other.y;
+	resultVector.deltaX = this->deltaX - other.deltaX;
+	resultVector.deltaY = this->deltaY - other.deltaY;
 
 	return resultVector;
 }
@@ -44,7 +45,7 @@ Vector2D Vector2D::subtract(const Vector2D &other) const
 double Vector2D::getLength() const
 {
 	
-	return sqrt((this->x * this->x) + (this->y * this->y));
+	return sqrt((this->deltaX * this->deltaX) + (this->deltaY * this->deltaY));
 }
 
 double Vector2D::getOrientation() const
