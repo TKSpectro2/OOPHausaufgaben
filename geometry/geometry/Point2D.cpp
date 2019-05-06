@@ -38,8 +38,8 @@ Vector2D Point2D::getDifference(const Point2D &other) const
 {
 	//Set funktionen werden eigentlich gebraucht
 	Vector2D resultVector;
-	resultVector.getX = this->x - other.x;
-	resultVector.y = this->y - other.y;
+	//resultVector.getX = this->x - other.x;
+	//resultVector.getY = this->y - other.y;
 
 	return resultVector;
 }

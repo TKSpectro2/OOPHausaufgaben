@@ -6,11 +6,14 @@
 
 Vector2D::Vector2D()
 {
+	this->x = 0.0;
+	this->y = 0.0;
 }
 
 Vector2D::Vector2D(double x, double y)
 {
-
+	this->x = x;
+	this->y = y;
 }
 
 Vector2D::~Vector2D()
@@ -55,6 +58,8 @@ double Vector2D::getLength() const
 double Vector2D::getOrientation() const
 {
 	//TODO
+
+	return 0.0;
 }
 
 double Vector2D::multiply(const Vector2D &other) const
