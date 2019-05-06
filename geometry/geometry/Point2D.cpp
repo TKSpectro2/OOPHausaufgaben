@@ -26,18 +26,18 @@ double Point2D::getY() const
 	return this->y;
 }
 
-Point2D Point2D::add(const Vector2D &vect) const
-{
-	Point2D resultPoint;
-	resultPoint.x = this->x + vect.getX();
-	resultPoint.y = this->y + vect.getY();
-	return resultPoint;
-}
+//Point2D Point2D::add(const Vector2D &vect) const
+//{
+//	Point2D resultPoint;
+//	resultPoint.x = this->x + vect.getX();
+//	resultPoint.y = this->y + vect.getY();
+//	return resultPoint;
+//}
 
 Vector2D Point2D::getDifference(const Point2D &other) const
 {
 	//Set funktionen werden eigentlich gebraucht
-	Vector2D resultVector;
+	Vector2D resultVector(20 , 1);
 	//resultVector.getX = this->x - other.x;
 	//resultVector.getY = this->y - other.y;
 
@@ -48,7 +48,7 @@ double Point2D::getDistance() const
 {
 	double resultDistance = 0.0;
 
-	sqrtf(powf(this->x - 0, 2) + powf(this->y - 0, 2));
+	sqrt(powf(this->x - 0, 2) + powf(this->y - 0, 2));
 
 	return resultDistance;
 }
@@ -57,7 +57,7 @@ double Point2D::getDistance(const Point2D &other) const
 {
 	double resultDistance = 0.0;
 
-	sqrtf(powf(this->x - other.getX(), 2)+powf(this->y - other.getY(), 2));
+	sqrt(powf(this->x - other.getX(), 2)+powf(this->y - other.getY(), 2));
 
 	return resultDistance;
 }
