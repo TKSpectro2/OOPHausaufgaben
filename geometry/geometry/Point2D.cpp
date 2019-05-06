@@ -1,16 +1,12 @@
 #include "Point2D.h"
-#include<cmath>
-#include<math.h>
 
 
-Point2D::Point2D()
+
+Point2D::Point2D(double x, double y) 
+	:x(x), y(y)
 {
 }
 
-Point2D::Point2D(double x, double y)
-{
-
-}
 
 Point2D::~Point2D()
 {
@@ -26,46 +22,33 @@ double Point2D::getY() const
 	return this->y;
 }
 
-//Point2D Point2D::add(const Vector2D &vect) const
-//{
-//	Point2D resultPoint;
-//	resultPoint.x = this->x + vect.getX();
-//	resultPoint.y = this->y + vect.getY();
-//	return resultPoint;
-//}
-
-Vector2D Point2D::getDifference(const Point2D &other) const
+Point2D Point2D::add(const Vector2D& vect) const
 {
-	//Set funktionen werden eigentlich gebraucht
-	Vector2D resultVector(20 , 1);
-	//resultVector.getX = this->x - other.x;
-	//resultVector.getY = this->y - other.y;
+	return Point2D(this->x + vect.getX(), this->y + vect.getY());
+}
 
-	return resultVector;
+Vector2D Point2D::getDifference(const Point2D& other) const
+{ 
+
+		return Vector2D (this->x - other.getX(), this->y - other.getY());
+	
 }
 
 double Point2D::getDistance() const
 {
-	double resultDistance = 0.0;
-
-	sqrt(powf(this->x - 0, 2) + powf(this->y - 0, 2));
-
-	return resultDistance;
+	
+	return this ->getX,this->getY;
 }
 
-double Point2D::getDistance(const Point2D &other) const
+double Point2D::getDistance(const Point2D& other) const
 {
-	double resultDistance = 0.0;
-
-	sqrt(powf(this->x - other.getX(), 2)+powf(this->y - other.getY(), 2));
-
-	return resultDistance;
+	return sqrt(pow(this->x-other.x,2)+pow(this->x-other.x,2));
 }
 
-void Point2D::moveBy(const Vector2D &delta)
+void Point2D::moveBy(const Vector2D& delta)
 {
-	this->x += delta.getX();
-	this->y += delta.getY();
+	this->x += delta.getX;
+	this->y += delta.getY;
 }
 
 void Point2D::moveBy(double deltaX, double deltaY)

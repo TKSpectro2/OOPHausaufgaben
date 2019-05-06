@@ -6,7 +6,7 @@ public:
 	~BoundingBox2D();
 	double getWidth() const;
 	double getHeight() const;
-	void uniteWith(const BoundingBox2D &other);
+	void uniteWith(const BoundingBox2D& other);
 private:
 	double x;
 	double y;
